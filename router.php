@@ -3,6 +3,14 @@ class Router
 {
     protected $routes = [];
 
+    /**
+     * Register a route
+     * 
+     * @param string $method
+     * @param string $uri
+     * @param string $controller
+     * @return void
+     */
     public function registerRoute($method, $uri, $controller)
     {
         $this->routes[] = [
@@ -15,8 +23,8 @@ class Router
     /**
      * Add a GET route
      * 
-     * @params string $uri
-     * @params string $controller
+     * @param string $uri
+     * @param string $controller
      * @return void
      */
 
@@ -30,8 +38,8 @@ class Router
     /**
      * Add a POST route
      * 
-     * @params string $uri
-     * @params string $controller
+     * @param string $uri
+     * @param string $controller
      * @return void
      */
 
@@ -44,8 +52,8 @@ class Router
     /**
      * Add a PUT route
      * 
-     * @params string $uri
-     * @params string $controller
+     * @param string $uri
+     * @param string $controller
      * @return void
      */
 
@@ -59,8 +67,8 @@ class Router
     /**
      * Add a DELETE route
      * 
-     * @params string $uri
-     * @params string $controller
+     * @param string $uri
+     * @param string $controller
      * @return void
      */
 
